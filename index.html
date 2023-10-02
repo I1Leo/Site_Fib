@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Fib</title>
+</head>
+
+<body>
+   <header class="page__header header">
+      <div class="header__container">
+         <ul class="header__body header-body">
+            <li class="header-body__item header-body__item_logo">
+               <a href="#" class="header-body__link">
+                  <img src="/img/logo.png" alt="" class="header-body__logo">
+               </a>
+            </li>
+            <li class="header-body__item header-body__item_delivery delivery">
+               <h3 class="delivery__headline">Доставка пасты <span>Москва</span></h3>
+               <div class="delivery__body delivery-body">
+                  <ul class="delivery-body__item">
+                     <li class="delivery-body__unit delivery-body__option delivery-option delivery-option_yandex-food">
+                        <p class="delivery-option__text">Яндекс еда</p>
+                        <div class="delivery-option__dot"><img src="/img/delivery__dot.svg" alt=""></div>
+
+                     </li>
+                     <li class="delivery-boby__unit delivery-body__description delivery-body__description_yandex-food">
+                        4.8</li>
+                  </ul>
+                  <ul class="delivery-body__item">
+                     <li class="delivery-body__unit delivery-body__option delivery-option">
+                        <p class="delivery-option__text">Время доставки</p>
+                        <div class="delivery-option__dot"><img src="/img/delivery__dot.svg" alt=""></div>
+                     </li>
+                     <li class="delivery-boby__unit delivery-body__description">от 31 мин</li>
+                  </ul>
+               </div>
+            </li>
+            <li class="header-body__item header-body__item_calling calling">
+               <div class="calling__btn-container">
+                  <button type="button" class="calling__btn">Заказать звонок</button>
+               </div>
+               <p class="calling__number">8 499 391-84-49</p>
+            </li>
+         </ul>
+         <nav class="header__nav">
+            <ul class="site__navigation site-navigation">
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Пицца</a></li>
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Паста</a></li>
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Супы</a></li>
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Салаты</a></li>
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Напитки</a></li>
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Десерты</a></li>
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Бакалея</a></li>
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Антипасти</a></li>
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Акции</a></li>
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Комбо</a></li>
+               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Контакты</a></li>
+            </ul>
+            <ul class="user__navigation user-navigation">
+               <li class="user-navigation__item user-navigation__item_login login">
+                  <button type="button" class="login__btn">Войти</button>
+               </li>
+               <li class="user-navigation__item user-navigation__item_basket basket">
+                  <button type="button" class="basket__btn">
+                     <p class="basket__text">Корзина</p>
+                     <p class="basket__value">0</p>
+                  </button>
+               </li>
+               <li class="user-navigation__item user-navigation__item_burger burger">
+                  <button type="button" class="burger__btn">
+                     <img class="burger__icon" src="/img/burger__icon.svg" alt="burger">
+                  </button>
+               </li>
+            </ul>
+
+
+
+         </nav>
+         <ul class="mobile__navigation mobile-navigation">
+         </ul>
+      </div>
+   </header>
+
+   <main class="page__main main">
+
+      <div class="basket__container">
+         <div class="basket__popup">
+            <button type="button" class="basket__hide-btn">
+               <img src="/img/cross__icon.svg" alt="">
+            </button>
+            <ul class="basket__list">
+            </ul>
+            <div class="basket__results results">
+               <p class="results__headline">Сумма заказа</p>
+               <p class="results__value">0 ₽</p>
+            </div>
+            <button type="button" class="basket__checkout">Оформить заказ</button>
+         </div>
+      </div>
+
+      <div class="page__swiper swiper">
+
+         <div class="swiper__wrapper swiper-wrapper">
+            <div class="swiper__slide swiper-slide">
+               <div class="swiper__img-container">
+                  <img src="/img/slider__img2.png" alt="" class="swiper__img">
+               </div>
+            </div>
+            <div class="swiper__slide swiper-slide">
+               <div class="swiper__img-container">
+                  <img src="/img/slider__img3.png" alt="" class="swiper__img">
+               </div>
+            </div>
+            <div class="swiper__slide swiper-slide">
+               <div class="swiper__img-container">
+                  <img src="/img/slider__img2.png" alt="" class="swiper__img">
+               </div>
+            </div>
+            <div class="swiper__slide swiper-slide">
+               <div class="swiper__img-container">
+                  <img src="/img/slider__img3.png" alt="" class="swiper__img">
+               </div>
+            </div>
+
+         </div>
+         <div class="swiper__button swiper__button_prev swiper-button-prev">
+            <img src="/img/prev.svg" alt="">
+         </div>
+         <div class="swiper__button swiper__button_next swiper-button-next">
+            <img src="/img/next.svg" alt="">
+         </div>
+      </div>
+
+      <section class="page__new-products new-products">
+         <div class="new-products__bg-container">
+            <img src="/img/bg-1.png" alt="">
+         </div>
+         <div class="new-products__container">
+            <h2 class="new-products__headline">Новинки</h2>
+            <div class="new-products__swiper swiper">
+               <ul class="new-products__list swiper-wrapper">
+                  <li class="new-products__item new-item swiper-slide">
+                     <div class="new-item__img-container">
+                        <img src="/img/new__product.png" alt="new">
+                     </div>
+                     <div class="new-item__body">
+                        <p class="new-item__name">Карбонара</p>
+                        <p class="new-item__price">от 120 ₽</p>
+                     </div>
+
+                  </li>
+                  <li class="new-products__item new-item swiper-slide">
+                     <div class="new-item__img-container">
+                        <img src="/img/new__product.png" alt="new">
+                     </div>
+                     <div class="new-item__body">
+                        <p class="new-item__name">Карбонара</p>
+                        <p class="new-item__price">от 120 ₽</p>
+                     </div>
+
+                  </li>
+                  <li class="new-products__item new-item swiper-slide">
+                     <div class="new-item__img-container">
+                        <img src="/img/new__product.png" alt="new">
+                     </div>
+                     <div class="new-item__body">
+                        <p class="new-item__name">Карбонара</p>
+                        <p class="new-item__price">от 120 ₽</p>
+                     </div>
+
+                  </li>
+                  <li class="new-products__item new-item swiper-slide">
+                     <div class="new-item__img-container">
+                        <img src="/img/new__product.png" alt="new">
+                     </div>
+                     <div class="new-item__body">
+                        <p class="new-item__name">Карбонара</p>
+                        <p class="new-item__price">от 120 ₽</p>
+                     </div>
+                  </li>
+                  <li class="new-products__item new-item swiper-slide">
+                     <div class="new-item__img-container">
+                        <img src="/img/new__product.png" alt="new">
+                     </div>
+                     <div class="new-item__body">
+                        <p class="new-item__name">Карбонара</p>
+                        <p class="new-item__price">от 120 ₽</p>
+                     </div>
+
+                  </li>
+                  <li class="new-products__item new-item swiper-slide">
+                     <div class="new-item__img-container">
+                        <img src="/img/new__product.png" alt="new">
+                     </div>
+                     <div class="new-item__body">
+                        <p class="new-item__name">Карбонара</p>
+                        <p class="new-item__price">от 120 ₽</p>
+                     </div>
+
+                  </li>
+                  <li class="new-products__item new-item swiper-slide">
+                     <div class="new-item__img-container">
+                        <img src="/img/new__product.png" alt="new">
+                     </div>
+                     <div class="new-item__body">
+                        <p class="new-item__name">Карбонара</p>
+                        <p class="new-item__price">от 120 ₽</p>
+                     </div>
+                  </li>
+                  <li class="new-products__item new-item swiper-slide">
+                     <div class="new-item__img-container">
+                        <img src="/img/new__product.png" alt="new">
+                     </div>
+                     <div class="new-item__body">
+                        <p class="new-item__name">Карбонара</p>
+                        <p class="new-item__price">от 120 ₽</p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+
+         </div>
+      </section>
+
+      <div class="product__range product-range">
+         <div class="product-range__container">
+            <section class="product-range__body product-body">
+               <h2 class="product-body__headline">Пицца</h2>
+               <ul class="product-body__list">
+                  <li class="product-body__item product-item">
+                     <div class="product-item__img-container">
+                        <img src="/img/product_1.png" alt="пицца">
+                     </div>
+                     <div class="product-item__body">
+                        <h3 class="product-item__name">С креветками и трюфелями1</h3>
+                        <p class="product-item__description">Домашнаяя паста феттуччине, сливочный соус, креветки,
+                           трюфельное
+                           масло, черный перец, пармезан.350 г
+                        </p>
+                     </div>
+                     <div class="product-item__pricing">
+                        <p class="product-item__price">от 600 ₽</p>
+                        <div class="product-item__btn-container">
+                           <button type="button" class="product-item__btn" data-product-name="С креветками и трюфелями1"
+                              data-product-price="600">В корзину</button>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="product-body__item product-item">
+                     <div class="product-item__img-container">
+                        <img src="/img/product_2.png" alt="пицца">
+                     </div>
+                     <div class="product-item__body">
+                        <h3 class="product-item__name">С креветками и трюфелями2</h3>
+                        <p class="product-item__description">Домашнаяя паста феттуччине, сливочный соус, креветки,
+                           трюфельное
+                           масло, черный перец, пармезан.350 г
+                        </p>
+                     </div>
+                     <div class="product-item__pricing">
+                        <p class="product-item__price">от 600 ₽</p>
+                        <div class="product-item__btn-container">
+                           <button type="button" class="product-item__btn" data-product-name="С креветками и трюфелями2"
+                              data-product-price="600">В корзину</button>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="product-body__item product-item">
+                     <div class="product-item__img-container">
+                        <img src="/img/product_3.png" alt="пицца">
+                     </div>
+                     <div class="product-item__body">
+                        <h3 class="product-item__name">С креветками и трюфелями3</h3>
+                        <p class="product-item__description">Домашнаяя паста феттуччине, сливочный соус, креветки,
+                           трюфельное
+                           масло, черный перец, пармезан.350 г
+                        </p>
+                     </div>
+                     <div class="product-item__pricing">
+                        <p class="product-item__price">от 600 ₽</p>
+                        <div class="product-item__btn-container">
+                           <button type="button" class="product-item__btn" data-product-name="С креветками и трюфелями3"
+                              data-product-price="600">В корзину</button>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="product-body__item product-item">
+                     <div class="product-item__img-container">
+                        <img src="/img/product_4.png" alt="пицца">
+                     </div>
+                     <div class="product-item__body">
+                        <h3 class="product-item__name">С креветками и трюфелями4</h3>
+                        <p class="product-item__description">Домашнаяя паста феттуччине, сливочный соус, креветки,
+                           трюфельное
+                           масло, черный перец, пармезан.350 г
+                        </p>
+                     </div>
+                     <div class="product-item__pricing">
+                        <p class="product-item__price">от 600 ₽</p>
+                        <div class="product-item__btn-container">
+                           <button type="button" class="product-item__btn" data-product-name="С креветками и трюфелями4"
+                              data-product-price="600">В корзину</button>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="product-body__item product-item">
+                     <div class="product-item__img-container">
+                        <img src="/img/product_1.png" alt="пицца">
+                     </div>
+                     <div class="product-item__body">
+                        <h3 class="product-item__name">С креветками и трюфелями5</h3>
+                        <p class="product-item__description">Домашнаяя паста феттуччине, сливочный соус, креветки,
+                           трюфельное
+                           масло, черный перец, пармезан.350 г
+                        </p>
+                     </div>
+                     <div class="product-item__pricing">
+                        <p class="product-item__price">от 600 ₽</p>
+                        <div class="product-item__btn-container">
+                           <button type="button" class="product-item__btn" data-product-name="С креветками и трюфелями5"
+                              data-product-price="600">В корзину</button>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="product-body__item product-item">
+                     <div class="product-item__img-container">
+                        <img src="/img/product_2.png" alt="пицца">
+                     </div>
+                     <div class="product-item__body">
+                        <h3 class="product-item__name">С креветками и трюфелями6</h3>
+                        <p class="product-item__description">Домашнаяя паста феттуччине, сливочный соус, креветки,
+                           трюфельное
+                           масло, черный перец, пармезан.350 г
+                        </p>
+                     </div>
+                     <div class="product-item__pricing">
+                        <p class="product-item__price">от 600 ₽</p>
+                        <div class="product-item__btn-container">
+                           <button type="button" class="product-item__btn" data-product-name="С креветками и трюфелями6"
+                              data-product-price="600">В корзину</button>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="product-body__item product-item">
+                     <div class="product-item__img-container">
+                        <img src="/img/product_3.png" alt="пицца">
+                     </div>
+                     <div class="product-item__body">
+                        <h3 class="product-item__name">С креветками и трюфелями7</h3>
+                        <p class="product-item__description">Домашнаяя паста феттуччине, сливочный соус, креветки,
+                           трюфельное
+                           масло, черный перец, пармезан.350 г
+                        </p>
+                     </div>
+                     <div class="product-item__pricing">
+                        <p class="product-item__price">от 600 ₽</p>
+                        <div class="product-item__btn-container">
+                           <button type="button" class="product-item__btn" data-product-name="С креветками и трюфелями7"
+                              data-product-price="600">В корзину</button>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="product-body__item product-item">
+                     <div class="product-item__img-container">
+                        <img src="/img/product_4.png" alt="пицца">
+                     </div>
+                     <div class="product-item__body">
+                        <h3 class="product-item__name">С креветками и трюфелями</h3>
+                        <p class="product-item__description">Домашнаяя паста феттуччине, сливочный соус, креветки,
+                           трюфельное
+                           масло, черный перец, пармезан.350 г
+                        </p>
+                     </div>
+                     <div class="product-item__pricing">
+                        <p class="product-item__price">от 600 ₽</p>
+                        <div class="product-item__btn-container">
+                           <button type="button" class="product-item__btn" data-product-name="С креветками и трюфелями8"
+                              data-product-price="600">В корзину</button>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </section>
+         </div>
+      </div>
+
+      <div class="page__promotions promotions">
+         <section class="promotions__container">
+            <h2 class="promotions__headline">Наши <span>акции</span></h2>
+            <ul class="promotions__list">
+               <li class="promotion__item promotion__item_big">
+                  <div class="promotion__img-container">
+                     <img src="/img/promotion_big.png" alt="" class="promotion__img">
+                  </div>
+               </li>
+               <li class="promotion__item">
+                  <div class="promotion__img-container">
+                     <img src="/img/promotion.png" alt="" class="promotion__img">
+                  </div>
+               </li>
+               <li class="promotion__item">
+                  <div class="promotion__img-container">
+                     <img src="/img/promotion.png" alt="" class="promotion__img">
+                  </div>
+               </li>
+               <li class="promotion__item">
+                  <div class="promotion__img-container">
+                     <img src="/img/promotion.png" alt="" class="promotion__img">
+                  </div>
+               </li>
+               <li class="promotion__item">
+                  <div class="promotion__img-container">
+                     <img src="/img/promotion.png" alt="" class="promotion__img">
+                  </div>
+               </li>
+            </ul>
+            <div class="promotion__btn-container">
+               <button type="button" class="promotion__btn">Все акции</button>
+            </div>
+         </section>
+         <div class="promotion__bg-container">
+            <img src="/img/bg-2.png" alt="">
+         </div>
+      </div>
+
+      <div class="page__payment-and-delivery payment-and-delivery">
+         <section class="payment-and-delivery__container">
+            <h2 class="payment-and-delivery__headline">Оплата и доставка</h2>
+            <ul class="payment-and-delivery__list">
+               <li class="payment-and-delivery__item item-payment-and-delivery">
+                  <div class="payment-and-delivery__icon-container">
+                     <img src="/img/delivery__icon1.svg" alt="" class="payment-and-delivery__icon">
+                  </div>
+                  <p class="payment-and-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </li>
+               <li class="payment-and-delivery__item item-payment-and-delivery">
+                  <div class="payment-and-delivery__icon-container">
+                     <img src="/img/delivery__icon2.svg" alt="" class="payment-and-delivery__icon">
+                  </div>
+                  <p class="payment-and-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </li>
+               <li class="payment-and-delivery__item item-payment-and-delivery">
+                  <div class="payment-and-delivery__icon-container">
+                     <img src="/img/delivery__icon3.svg" alt="" class="payment-and-delivery__icon">
+                  </div>
+                  <p class="payment-and-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </li>
+               <li class="payment-and-delivery__item item-payment-and-delivery">
+                  <div class="payment-and-delivery__icon-container">
+                     <img src="/img/delivery__icon4.svg" alt="" class="payment-and-delivery__icon">
+                  </div>
+                  <p class="payment-and-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </li>
+
+            </ul>
+            <div class="payment-and-delivery__location">
+               <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae382d56ca175a4f67a41bff26ec0dc50559195a3161a842aaf373c5f5d167cbf&amp;source=constructor"
+                  width="100%" height="322" frameborder="0"></iframe>
+            </div>
+         </section>
+      </div>
+   </main>
+
+   <footer class="page__footer footer">
+      <div class="footer__container">
+         <div class="body-footer__logo-container">
+            <img src="/img/logo.png" alt="" class="body-footer__logo">
+         </div>
+         <ul class="body-footer__info info">
+            <li class="info__item">
+               <a href="#" class="info__link">Калорийность и состав</a>
+            </li>
+            <li class="info__item">
+               <a href="#" class="info__link">Правовая информация</a>
+            </li>
+         </ul>
+         <div class="body-footer__contacts contacts">
+            <h3 class="contacts__headline">Мы в соцсетях</h3>
+            <ul class="contacts__socials socials">
+               <li class="socials__item">
+                  <a href="#" class="socials__link">YouTube</a>
+               </li>
+               <li class="socials__item">
+                  <a href="#" class="socials__link">Facebook</a>
+               </li>
+               <li class="socials__item">
+                  <a href="#" class="socials__link">Instagram</a>
+               </li>
+               <li class="socials__item">
+                  <a href="#" class="socials__link">ВКонтакте</a>
+               </li>
+            </ul>
+            <p class="contacts__adress">Москва ул. Проспект Вернадского 86В</p>
+         </div>
+         <p class="footer-footer__copyright">YaBao Все права защищены © 2023</p>
+         <ul class="footer-footer__payments payments">
+            <li class="payments__item">
+               <img src="/img/payments__visa.svg" alt=visa"" class="paiments_icon">
+            </li>
+            <li class="payments__item">
+               <img src="/img/payments__paypall.svg" alt="paypall" class="paiments_icon">
+            </li>
+            <li class="payments__item">
+               <img src="/img/payments__mastercard.svg" alt="mastercard" class="paiments_icon">
+            </li>
+         </ul>
+         <div class="footer__connections connections">
+            <h3 class="connections__headline">Остались вопросы? А мы всегда на связи:
+            </h3>
+            <ul class="connections__list">
+               <li class="connections__item">
+                  <a href="" class="connections__link">
+                     <img src="/img/connection__viber.svg" alt="" class="connections__icon">
+                  </a>
+               </li>
+               <li class="connections__item">
+                  <a href="" class="connections__link">
+                     <img src="/img/connection__skype.svg" alt="" class="connections__icon">
+                  </a>
+               </li>
+               <li class="connections__item">
+                  <a href="" class="connections__link">
+                     <img src="/img/connection__thunder.svg" alt="" class="connections__icon">
+                  </a>
+               </li>
+               <li class="connections__item">
+                  <a href="" class="connections__link">
+                     <img src="/img/connection__telegram.svg" alt="" class="connections__icon">
+                  </a>
+               </li>
+               <li class="connections__item">
+                  <a href="" class="connections__link">
+                     <img src="/img/connection__facebook.svg" alt="" class="connections__icon">
+                  </a>
+               </li>
+               <li class="connections__item">
+                  <a href="" class="connections__link">
+                     <img src="/img/connection__vk.svg" alt="" class="connections__icon">
+                  </a>
+               </li>
+               <li class="connections__item connections__item_last">
+                  <a href="" class="connections__link">Написать нам</a>
+               </li>
+            </ul>
+         </div>
+         <div class="connections__calling connection-calling calling">
+            <div class="calling__btn-container connection-calling__btn-container">
+               <button type="button" class="calling__btn connection-calling__btn">Заказать звонок</button>
+            </div>
+            <p class="calling__number connection-calling__number">8 499 391-84-49</p>
+         </div>
+      </div>
+      <div class="footer__bg-container">
+         <img src="/img/bg-3.png" alt="">
+      </div>
+   </footer>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script type="module" rel="text/javascript" src="/script.js"></script>
+</body>
+
+</html>
