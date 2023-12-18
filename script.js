@@ -53,10 +53,10 @@ let isClicked = false;
 
 burgerBtn.addEventListener('click', () => {
    if (!isClicked) {
-      burgerIcon.setAttribute('src', '/img/cross__icon.svg');
+      burgerIcon.setAttribute('src', 'img/cross__icon.svg');
       isClicked = true;
    } else {
-      burgerIcon.setAttribute('src', '/img/burger__icon.svg');
+      burgerIcon.setAttribute('src', 'img/burger__icon.svg');
       isClicked = false;
    }
 
