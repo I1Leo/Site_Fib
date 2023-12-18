@@ -42,7 +42,6 @@ body {
    @media (max-width: 768px) {
       display: flex;
       align-items: center;
-      // justify-content: space-between;
    }
 
    @media (max-width: 573px) {
@@ -111,7 +110,7 @@ body {
 
 .delivery-option_yandex-food {
    &::before {
-      content: url('/img/yandex_food.svg');
+      content: url('img/yandex_food.svg');
       height: 18px;
    }
 }
@@ -131,7 +130,7 @@ body {
 
 .delivery-body__description_yandex-food {
    &::after {
-      content: url('/img/rating_star.svg');
+      content: url('img/rating_star.svg');
       height: 13px;
       margin-top: -2px;
    }
