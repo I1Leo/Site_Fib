@@ -98,7 +98,7 @@ document.querySelector('.basket__btn').addEventListener('click', () => {
 
    if (document.documentElement.clientWidth < 573) {
       document.querySelector('.mobile-navigation').classList.remove('mobile-navigation_active');
-      document.querySelector('.burger__icon').setAttribute('src', '/img/burger__icon.svg');
+      document.querySelector('.burger__icon').setAttribute('src', 'img/burger__icon.svg');
    }
 });
 
@@ -150,7 +150,7 @@ function addToBasket(img, name, price) {
        <div class="basket-item__header">
        <h3 class="product-item__name" data-product-name = "${name}">${name}</h3>
          <button type="button" class="basket__close-btn">
-           <img class="basket__close-icon" src="/img/close.svg" alt="">
+           <img class="basket__close-icon" src="img/close.svg" alt="">
          </button>
        </div>
        <div class="basket-item__footer">
