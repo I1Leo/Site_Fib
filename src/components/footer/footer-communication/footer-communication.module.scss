@@ -1,0 +1,16 @@
+.container {
+   grid-column-start: 3;
+   grid-row: 1 / span 2;
+   justify-self: end;
+}
+
+.title {
+   color: #0E0C0D;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 17px;
+   padding-top: 25px;
+   padding-bottom: 33px;
+   text-transform: uppercase;
+   align-items: center;
+}

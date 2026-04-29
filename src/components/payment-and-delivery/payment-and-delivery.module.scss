@@ -1,0 +1,28 @@
+.container {
+   background-color: #E3ECF5;
+   padding: 56px 0 74px 0;
+
+   @media (max-width: 1110px) {
+      padding: 42px 0px 52px 0px;
+   }
+}
+
+.wrapper {
+   max-width: 1110px;
+   width: 100%;
+   margin: 0 auto;
+
+   @media (max-width: 1110px) {
+      max-width: none;
+      padding: 0 20px;
+   }
+}
+
+.title {
+   color: #F7D22D;
+   font-size: 30px;
+   font-weight: 800;
+   line-height: 37px;
+   text-align: center;
+   padding-bottom: 63px;
+}

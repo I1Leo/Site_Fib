@@ -1,0 +1,40 @@
+.container {
+   max-width: 1110px;
+   width: 100%;
+   margin: 0 auto;
+   padding-bottom: 64px;
+
+   @media (max-width: 1110px) {
+      max-width: none;
+      margin: 0;
+      padding: 0 20px 40px 20px;
+   }
+}
+
+.title {
+   font-size: 32px;
+   font-weight: 800;
+   line-height: 39px;
+   padding-bottom: 26px;
+}
+
+.nav {
+   display: flex;
+   gap: 20px;
+   padding-bottom: 26px;
+}
+
+.list {
+   display: grid;
+   grid-template-columns: repeat(4, 253px);
+   column-gap: 31px;
+
+   @media (max-width: 1110px) {
+      grid-template-columns: repeat(2, auto);
+      row-gap: 30px;
+   }
+}
+
+.active {
+   text-decoration: underline;
+}

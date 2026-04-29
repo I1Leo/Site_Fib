@@ -1,0 +1,26 @@
+.container {
+   padding-bottom: 71px;
+
+   @media (max-width: 1110px) {
+      padding: 0 20px 38px 20px;
+   }
+}
+
+.slider {
+   max-width: 1110px;
+   position: relative;
+}
+
+.slide {
+   width: 545px !important;
+
+   @media (max-width: 1110px) {
+      width: 490px !important;
+   }
+}
+
+
+.img {
+   width: 100%;
+}
+

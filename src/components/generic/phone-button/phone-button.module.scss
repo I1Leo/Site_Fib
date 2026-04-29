@@ -1,0 +1,14 @@
+.phone_button {
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 28px;
+   color: #696F7A;
+
+   padding: 7px 27px 7px 28px;
+   border-radius: 28px;
+   background-color: #F3F3F7;
+
+   &:hover {
+      cursor: pointer;
+   }
+}

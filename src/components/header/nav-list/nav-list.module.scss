@@ -1,0 +1,17 @@
+.list {
+   display: flex;
+   gap: 17px;
+   align-items: center;
+}
+
+.item {
+   font-family: Montserrat;
+   font-size: 15px;
+   font-weight: 600;
+   line-height: 18px;
+
+   &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+   }
+}

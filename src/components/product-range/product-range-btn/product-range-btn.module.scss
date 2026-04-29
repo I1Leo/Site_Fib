@@ -1,0 +1,25 @@
+.btn {
+   color: #fff;
+   font-family: Montserrat;
+   font-size: 14px;
+   font-weight: 700;
+   min-width: 123px;
+
+   background-color: #F7D22D;
+   border-radius: 8px;
+   padding: 10px 23px;
+   flex-shrink: 0;
+
+   &:hover {
+      color: #473E43;
+      cursor: pointer;
+   }
+}
+
+.btn_active {
+   background: rgb(224, 27, 27);
+ 
+   &:hover {
+      color: #fff;
+   }
+}

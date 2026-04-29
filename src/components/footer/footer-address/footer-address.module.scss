@@ -1,0 +1,17 @@
+.container {
+   width: 163px;
+   grid-column-start: 2;
+   grid-row-start: 3;
+   display: flex;
+   justify-self: center;
+   align-self: center;
+}
+
+.text {
+   color: #0E0C0D;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 33px;
+   opacity: 0.8;
+   align-self: end;
+}

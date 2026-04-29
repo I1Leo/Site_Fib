@@ -1,0 +1,26 @@
+.container {
+   border: 2px solid #E4ECF5;
+   border-radius: 13px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.big {
+   grid-column: span 2;
+}
+
+.link {
+   padding: 13px 0 7px 0;
+}
+
+.textlink {
+   padding: 18px 0;
+}
+
+.text {
+   color: #0E0C0D;
+   font-size: 13px;
+   font-weight: 700;
+   line-height: 16px;
+}

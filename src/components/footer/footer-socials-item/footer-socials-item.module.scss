@@ -1,0 +1,11 @@
+.item {
+   color: #0E0C0D;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 28px;
+   opacity: 0.8;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}

@@ -1,0 +1,14 @@
+
+.container {
+   display: grid;
+   grid-template-columns: minmax(358px, 541px) repeat(2, minmax(170px,256px));
+   grid-template-rows: repeat(2, minmax(117px, 189px));
+   row-gap: 27px;
+   column-gap: 29px;
+   padding-bottom: 49px;
+
+   @media (max-width: 1110px) {
+      row-gap: 17px;
+      column-gap: 14px;
+   }
+}

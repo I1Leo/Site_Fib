@@ -1,0 +1,16 @@
+.container {
+   max-width: 1110px;
+   margin: 0 auto;
+   padding-bottom: 46px;
+
+   @media (max-width: 1110px) {
+      padding: 0 20px 38px 20px;
+   }
+}
+
+.title {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 29px;
+   padding-bottom: 33px;
+}

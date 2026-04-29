@@ -1,0 +1,72 @@
+.container {
+   display: grid;
+   grid-template-columns: 163px 198px;
+   grid-template-rows: auto auto;
+   column-gap: 21px;
+}
+
+.heading {
+   font-size: 17px;
+   font-weight: 600;
+   line-height: 21px;
+
+   grid-column: span 2;
+   display: flex;
+   margin: auto 0;
+   gap: 6px;
+
+   span {
+      color: #F3D100;
+   }
+}
+
+.about {
+   display: flex;
+   margin: auto 0;
+   gap: 4px;
+
+   font-size: 13px;
+   font-weight: 700;
+   line-height: 16px;
+}
+
+.type {
+   display: flex;
+   gap: 7px;
+   margin: auto 0;
+   &::before {
+      content: url("../../../images/header/yandex-food.png");
+   }
+
+   &::after {
+      content: url("../../../images/header/dot.svg");
+   }
+}
+
+.rating {
+   display: flex;
+   gap: 4px;
+   margin: auto 0;
+   &::after {
+      content: url("../../../images/header/rating-star.svg");
+   }
+}
+
+.timing {
+   font-size: 13px;
+   font-weight: 700;
+   line-height: 16px;
+
+   display: flex;
+   margin: auto 0;
+   gap: 5px;
+
+   span {
+      display: flex;
+      gap: 7px;
+   }
+
+   span::after {
+      content: url("../../../images/header/dot.svg");
+   }
+}

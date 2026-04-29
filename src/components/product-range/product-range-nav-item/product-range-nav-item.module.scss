@@ -1,0 +1,15 @@
+.item {
+   color: #F7D22D;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 29px;
+
+   &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+   }
+}
+
+.active {
+   text-decoration: underline;
+}
