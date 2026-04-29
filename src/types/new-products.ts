@@ -1,7 +1,7 @@
 export type NewProduct = {
    id: number
    name: string
-   price: string
+   price: number
    image: string
 }
 

@@ -14,7 +14,7 @@ module.exports = {
 			? 'static/scripts/[name].[contenthash].js'
 			: 'static/scripts/[name].js',
 		publicPath: production
-			? '/Fib/' // для GitHub Pages
+			? '/Site_Fib/' // для GitHub Pages
 			: '/', // для dev
 		clean: true,
 	},

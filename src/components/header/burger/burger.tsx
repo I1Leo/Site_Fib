@@ -1,9 +1,9 @@
-
+import burgerIcon from '../../../images/header/burger.svg';
 
 export default function Burger () {
    return (
       <div>
-         <img src="src/images/header/burger.svg" alt="" />
+         <img src={burgerIcon} alt="" />
       </div>
    )
 }
